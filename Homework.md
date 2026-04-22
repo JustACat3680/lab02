@@ -4,12 +4,11 @@
 *Репозиторий создан*</br>
 </br>
 
-2. Выполните инструкцию по созданию первого коммита на странице репозитория, созданного на предыдещем шаге.
+2. Выполните инструкцию по созданию первого коммита на странице репозитория, созданного на предыдещем шаге.</br>
 **Команда**:</br>
 `git add README.md`</br>
 `git commit -m"added README.md"`</br>
 `git push origin master`</br>
-</br>
 **Вывод**:</br>
 [master cbc713b] added README.md
  1 file changed, 1 insertion(+)
@@ -21,7 +20,7 @@ To https://github.com/JustACat3680/lab02
    742148f..cbc713b  master -> master
 </br>
 
-3. Создайте файл hello_world.cpp в локальной копии репозитория (который должен был появиться на шаге 2). Реализуйте программу Hello world на языке C++ используя плохой стиль кода. Например, после заголовочных файлов вставьте строку using namespace std;.
+3. Создайте файл hello_world.cpp в локальной копии репозитория (который должен был появиться на шаге 2). Реализуйте программу Hello world на языке C++ используя плохой стиль кода. Например, после заголовочных файлов вставьте строку using namespace std;.</br>
 **Команда**:</br>
 `nano hello_world.cpp`</br>
 **Вывод**:</br>
@@ -34,14 +33,14 @@ int main()
 }
 </br>
 
-4. Добавьте этот файл в локальную копию репозитория.
+4. Добавьте этот файл в локальную копию репозитория.</br>
 **Команда**:</br>
 `git add hello_world.cpp`</br>
 **Вывод**:</br>
 *Файл добавлен*</br>
 </br>
 
-5. Закоммитьте изменения с осмысленным сообщением.
+5. Закоммитьте изменения с осмысленным сообщением.</br>
 **Команда**:</br>
 `git commit -m"added hello_world.cpp"`</br>
 **Вывод**:</br>
@@ -50,7 +49,7 @@ int main()
  create mode 100644 hello_world.cpp
 </br>
 
-6. Изменитьте исходный код так, чтобы программа через стандартный поток ввода запрашивалось имя пользователя. А в стандартный поток вывода печаталось сообщение Hello world from @name, где @name имя пользователя.
+6. Изменитьте исходный код так, чтобы программа через стандартный поток ввода запрашивалось имя пользователя. А в стандартный поток вывода печаталось сообщение Hello world from @name, где @name имя пользователя.</br>
 **Команда**:</br>
 `nano hello_world.cpp`</br>
 **Вывод**:</br>
@@ -66,7 +65,7 @@ int main()
 
 </br>
 
-7. Закоммитьте новую версию программы. Почему не надо добавлять файл повторно git add?
+7. Закоммитьте новую версию программы. Почему не надо добавлять файл повторно git add?</br>
 **Команда**:</br>
 `git commit -am"edited hello_world.cpp"`</br>
 **Вывод**:</br>
@@ -75,7 +74,7 @@ int main()
 
 </br>
 
-8. Запуште изменения в удалёный репозиторий.
+8. Запуште изменения в удалёный репозиторий.</br>
 **Команда**:</br>
 `git push origin master`</br>
 **Вывод**:</br>
@@ -89,21 +88,21 @@ To https://github.com/JustACat3680/lab02
    2f23af1..4f89e1e  master -> master
 </br>
 
-9. Проверьте, что история коммитов доступна в удалёный репозитории.
+9. Проверьте, что история коммитов доступна в удалёный репозитории.</br>
 **Вывод**:</br>
 *История коммитов доступна*</br>
 </br>
 
 **Part II**
 
-1. В локальной копии репозитория создайте локальную ветку patch1.
+1. В локальной копии репозитория создайте локальную ветку patch1.</br>
 **Команда**:</br>
 `git checkout -b patch1`</br>
 **Вывод**:</br>
 Switched to a new branch 'patch1'</br>
 </br>
 
-2. Внесите изменения в ветке patch1 по исправлению кода и избавления от using namespace std;.
+2. Внесите изменения в ветке patch1 по исправлению кода и избавления от using namespace std;.</br>
 **Команда**:</br>
 `nano hello_world.cpp`</br>
 **Вывод**:</br>
@@ -117,7 +116,7 @@ int main()
 }
 </br>
 
-3. commit, push локальную ветку в удалённый репозиторий.
+3. commit, push локальную ветку в удалённый репозиторий.</br>
 **Команда**:</br>
 `git commit -am"edited hello_world.cpp"`</br>
 `git push origin patch1`</br>
@@ -138,17 +137,17 @@ To https://github.com/JustACat3680/lab02
  * [new branch]      patch1 -> patch1
 </br>
 
-4. Проверьте, что ветка patch1 доступна в удалёный репозитории.
+4. Проверьте, что ветка patch1 доступна в удалёный репозитории.</br>
 **Вывод**:</br>
 *Ветка patch1 доступна*</br>
 </br>
 
-5. Создайте pull-request patch1 -> master.
+5. Создайте pull-request patch1 -> master.</br>
 **Вывод**:</br>
 *Pull-request создан*</br>
 </br>
 
-6. В локальной копии в ветке patch1 добавьте в исходный код комментарии.
+6. В локальной копии в ветке patch1 добавьте в исходный код комментарии.</br>
 **Команда**:</br>
 `nano hello_world.cpp`</br>
 **Вывод**:</br>
@@ -162,7 +161,7 @@ int main()
 }
 </br>
 
-7. commit, push.
+7. commit, push.</br>
 **Команда**:</br>
 `git commit -am"edited hello_world.cpp"`</br>
 `git push origin patch1`</br>
@@ -180,17 +179,17 @@ To https://github.com/JustACat3680/lab02
    9be62df..362b664  patch1 -> patch1
 </br>
 
-8. Проверьте, что новые изменения есть в созданном на шаге 5 pull-request
+8. Проверьте, что новые изменения есть в созданном на шаге 5 pull-request</br>
 **Вывод**:</br>
 *Изменения присутствуют*</br>
 </br>
 
-9. В удалённый репозитории выполните слияние PR patch1 -> master и удалите ветку patch1 в удаленном репозитории.
+9. В удалённый репозитории выполните слияние PR patch1 -> master и удалите ветку patch1 в удаленном репозитории.</br>
 **Вывод**:</br>
 *Выполнено слияние pull-request, ветка patch1 удалена*</br>
 </br>
 
-10. Локально выполните pull.
+10. Локально выполните pull.</br>
 **Команда**:</br>
 `git checkout master`</br>
 `git pull origin master`</br>
@@ -210,7 +209,7 @@ Fast-forward
  1 file changed, 3 insertions(+), 4 deletions(-)
 </br>
 
-11. С помощью команды git log просмотрите историю в локальной версии ветки master.
+11. С помощью команды git log просмотрите историю в локальной версии ветки master.</br>
 **Команда**:</br>
 `git log`</br>
 **Вывод**:</br>
@@ -255,7 +254,7 @@ Date:   Thu Apr 2 09:31:40 2026 +0300
 (END)
 </br>
 
-12. Удалите локальную ветку patch1.
+12. Удалите локальную ветку patch1.</br>
 **Команда**:</br>
 `git branch -d patch1`</br>
 **Вывод**:</br>
@@ -263,14 +262,14 @@ Deleted branch patch1 (was 362b664).
 </br>
 
 **Part III**
-1. Создайте новую локальную ветку patch2.
+1. Создайте новую локальную ветку patch2.</br>
 **Команда**:</br>
 `git checkout -b patch2`</br>
 **Вывод**:</br>
 Switched to a new branch 'patch2'
 </br>
 
-2. Измените code style с помощью утилиты clang-format. Например, используя опцию -style=Mozilla.
+2. Измените code style с помощью утилиты clang-format. Например, используя опцию -style=Mozilla.</br>
 **Команда**:</br>
 `clang-format -style=Mozilla -dump-config > .clang-format`</br>
 `clang-format -i hello_world.cpp`</br>
@@ -287,7 +286,7 @@ main()
 }
 </br>
 
-3. commit, push, создайте pull-request patch2 -> master.
+3. commit, push, создайте pull-request patch2 -> master.</br>
 **Команда**:</br>
 `git commit -am"edited hello_world.cpp"`</br>
 `git push origin patch2`</br>
@@ -308,7 +307,7 @@ To https://github.com/JustACat3680/lab02
  * [new branch]      patch2 -> patch2
 </br>
 
-4. В ветке master в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.
+4. В ветке master в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.</br>
 **Вывод**:</br>
 #include <iostream>
 int main()
@@ -320,13 +319,13 @@ int main()
 }
 </br>
 
-5. Убедитесь, что в pull-request появились конфликтны.
+5. Убедитесь, что в pull-request появились конфликтны.</br>
 **Вывод**:</br>
 *Конфликты появились:*</br>
 This branch has conflicts that must be resolved</br>
 </br>
 
-6. Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.
+6. Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.</br>
 **Команда**:</br>
 `git pull --rebase origin master`</br>
 `nano hello_world.cpp`</br>
@@ -354,7 +353,7 @@ Could not apply 61aa44b... edited hello_world.cpp
 Successfully rebased and updated refs/heads/patch2.
 </br>
 
-7. Сделайте force push в ветку patch2
+7. Сделайте force push в ветку patch2</br>
 **Команда**:</br>
 `git push --force origin patch2`</br>
 **Вывод**:</br>
@@ -369,12 +368,12 @@ To https://github.com/JustACat3680/lab02
    46ed7b1..6c5131b  patch2 -> patch2
 </br>
 
-8. Убедитель, что в pull-request пропали конфликтны.
+8. Убедитель, что в pull-request пропали конфликтны.</br>
 **Вывод**:</br>
 *В pull-request конфликтов нет*</br>
 </br>
 
-9. Вмержите pull-request patch2 -> master.
+9. Вмержите pull-request patch2 -> master.</br>
 **Команда**:</br>
 `git checkout master`</br>
 `git merge patch2`</br>
