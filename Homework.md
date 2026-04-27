@@ -332,6 +332,23 @@ This branch has conflicts that must be resolved</br>
 `git add hello_world.cpp`</br>
 `git rebase --continue`</br>
 **Вывод**:</br>
+#include <iostream>
+int main()
+{
+<<<<<<< HEAD
+    std::string name;
+    std::cout<<"Input name: "; std::cin>>name; //input
+    std::cout<<"Hello World from: "<<name<<std::endl; //output
+    return 0;
+=======
+  std::string name;
+  std::cout << "Input name: ";
+  std::cin >> name;                                      // ввод имени
+  std::cout << "Hello World from " << name << std::endl; // вывод в консоль
+  return 0;
+>>>>>>> 184b041 (edited hello_world.cpp)
+}
+
 remote: Enumerating objects: 5, done.
 remote: Counting objects: 100% (5/5), done.
 remote: Compressing objects: 100% (3/3), done.
